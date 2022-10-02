@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    color: #696969;
+    background: #fff;
+}
+
+/* phần code dùng chung */
+.title h2 {
+    font-size: 18px;
+    color: #F53626;
+}
+
+.title h3 {
+    font-size: 40px;
+    color: #000c04;
+}
+
+/* Header */
+/* Carousel */
+/* About */
+/* Services */
+.Services {
+    padding: 48px 0;
+    background: #f9f7fe;
+}
+
+.Services .container {
+    padding: 48px 25px;
+
+}
+
+.Services__item {
+    padding: 0 15px;
+}
+
+.Services__text {
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.Services__text i {
+    color: #189a46;
+    font-size: 30px;
+}
+
+.Services__text h2 {
+    font-size: 1.5rem;
+    color: #000c04;
+    padding: 25px 0 7px;
+    font-weight: 600;
+}
+
+.Services__text h2:hover {
+    color: #189a46;
+}
+
+.Services__text p {
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.Services__text a {
+    color: #000c04;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: solid 2px #189a46;
+}
+
+.Services__text a:hover {
+    text-decoration: none;
+    color: #189a46;
+}
+
+.Services__text:hover {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+/* Choose */
+/* Number */
+/* Plans */
+.Plans {
+    padding: 72px 0 96px;
+    background-color: #f9f7fe;
+}
+
+.Plans__title {
+    padding-bottom: 48px;
+}
+
+.Plans__title h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.Plans__title h3{
+    font-weight: 600;
+}
+
+.Plans__content {
+    margin: 0 57px;
+}
+
+.Plans__item {
+    background-color: #fff;
+    margin: 50px 0;
+    padding: 56px 40px;
+    border-radius: 5px;
+}
+
+.Plans__item2 {
+    margin: 0;
+    box-shadow: 10px 10px 30px 0 rgb(17 17 17 / 9%);
+}
+
+.Plans__top h5 {
+    font-size: 25px;
+    color: #000c04;
+    font-weight: 600;
+}
+
+.Plans__top h4 {
+    font-size: 40px;
+    color: #189a46;
+    font-weight: 600;
+    padding: 25px 0;
+}
+
+.Plans__top h4 span:first-of-type {
+    font-size: 25px;
+    vertical-align: super;
+}
+
+.Plans__top h4 span:last-of-type {
+    font-size: 16px;
+    color: #999999;
+    font-weight: 400;
+}
+
+.Plans__text {
+    padding-top: 16px;
+}
+
+.Plans__text ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.btn-success {
+    font-size: 18px;
+    padding: 12px 35px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Plans__item2 {
+    padding: 0;
+}
+
+.Plans__item2 .Plans__top {
+    background-color: #189a46;
+    padding: 48px 40px 8;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.Plans__item2 .Plans__text {
+    padding: 32px 40px 90px;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.Plans__item2 .Plans__top h3 {
+    color: #189a46;
+    padding: 8px 20px;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.Plans__item2 .Plans__top h5 {
+    color: #fff;
+}
+
+.Plans__item2 .Plans__top h4 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.Plans__item2 button:hover {
+    background-color: #189a46;
+    border-color: #189a46;
+}
+
+/* Better */
+/* Test */
+/* footer */
