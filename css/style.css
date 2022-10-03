@@ -21,6 +21,11 @@ body {
 .title h3 {
     font-size: 40px;
     color: #000c04;
+    font-weight: 600;
+}
+title p{
+    font-size: 1.2rem;
+
 }
 
 /* Header */
@@ -207,5 +212,25 @@ body {
 }
 
 /* Better */
+.Better{
+    padding: 96px 0;
+}
+.Better .container{
+    padding: 0 25px;
+}
+.Better__title p{
+    margin-top: 16px;
+}
+.Better__video img{
+    width: 950px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 48px;
+}
+.Better__video a{
+    left: 0;
+    right: 0;
+    top: calc(50% - 0px);
+}
 /* Test */
 /* footer */
