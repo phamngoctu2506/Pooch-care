@@ -224,7 +224,7 @@ title p {
 .Test__item {
   margin: 15px;
   padding: 40px 30px;
-
+border-radius: 10px;
 }
 
 .Test__img img {
@@ -248,21 +248,84 @@ title p {
 .item__bottom p {
   font-size: 17px;
 }
-.item__header span{
+
+.item__header span {
   font-size: 50px;
-    color: #189a46;
-    line-height: .8;
-    padding-top: 8px;
-    font-weight: 600;
-    display: inline-block;
-    font-family: "Merriweather", serif;
+  color: #189a46;
+  line-height: .8;
+  padding-top: 8px;
+  font-weight: 600;
+  display: inline-block;
+  font-family: "Merriweather", serif;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls .owl-page span:hover{
+.owl-theme .owl-controls .owl-page span:hover {
   background-color: #189a46;
-    width: 30px;
-    height: 12px;
+  width: 30px;
+  height: 12px;
 }
 
 /* footer */
+.footer__header {
+  background-color: #fff;
+}
+
+.footer__contact {
+  margin: 0 230px;
+}
+
+.footer__contact h3 {
+  font-size: 40px;
+}
+
+.footer__contact p {
+  font-size: 1.2rem;
+}
+
+.footer__contact input {
+  height: 60px;
+  flex-basis: 70%;
+  border-radius: 8px;
+  border: 1px solid #999999;
+}
+
+.footer__contact input[type="text"] {
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.footer__contact input[type="text"]:focus {
+  border: 1px solid #189a46;
+}
+
+input:focus-visible {
+  outline: 0px;
+}
+
+.footer__header .btn-success {
+  margin-top: 0;
+}
+
+.footer__bottom {
+  background-color: #000c04;
+}
+
+.footer__allright {
+  border-top: 1px solid rgba(103, 99, 99, 0.2);
+}
+
+.footer__bottom a {
+  list-style: none;
+  color: #696969;
+}
+
+.footer__bottom-left ul li,
+.footer__bottom-right ul li {
+  list-style: none;
+  transition: all 1s;
+}
+.footer__bottom-right ul li a:hover,
+.footer__bottom-left ul li a:hover{
+  color: #fff;
+}
