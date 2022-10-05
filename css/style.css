@@ -115,6 +115,8 @@ title p {
 }
 
 .Plans__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 57px;
 }
 
@@ -212,7 +214,13 @@ title p {
   background-color: #189a46;
   border-color: #189a46;
 }
-
+/* reponsive plan */
+@media (max-width: 800px) {
+  .Plans__content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 /* Better */
 
 
@@ -224,7 +232,7 @@ title p {
 .Test__item {
   margin: 15px;
   padding: 40px 30px;
-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .Test__img img {
@@ -325,7 +333,37 @@ input:focus-visible {
   list-style: none;
   transition: all 1s;
 }
+
 .footer__bottom-right ul li a:hover,
-.footer__bottom-left ul li a:hover{
+.footer__bottom-left ul li a:hover {
   color: #fff;
+}
+@media (max-width: 992px) {
+  .Test__item {
+    max-width: 992px;
+  }
+}
+/* reponsive */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
