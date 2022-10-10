@@ -335,7 +335,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="btn btn-success">Buy Now</button>
+                    <button type="button" class="btn btn-success Plans__btn">Buy Now</button>
                 </div>
                 <div class="Plans__item Plans__item2">
                     <div class="Plans__top">
@@ -363,7 +363,7 @@
                                 <p>Customer Support</p>
                             </li>
                         </ul>
-                        <button type="button" class="btn btn-success">Get Started</button>
+                        <button type="button" class="btn btn-success Plans__btn">Get Started</button>
                     </div>
                 </div>
                 <div class="Plans__item">
@@ -392,7 +392,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button type="button" class="btn btn-success">Buy Now</button>
+                    <button type="button" class="btn btn-success Plans__btn">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -406,7 +406,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec
                         tetur
                         adipisi elit.
-                        <br> Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
+                        Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
                         officia.
                     </p>
                 </div>
@@ -414,8 +414,7 @@
                     <div class="position-relative">
                         <img src="./img/banner2.jpg" class="img-fluid video-popup-image" alt="video-popup">
                         <a href="#small-dialog1" class="play-icon popup-with-zoom-anim position-absolute">
-                            <span
-                                class="fa fa-play-circle" aria-hidden="true"></span>
+                            <span class="fa fa-play-circle" aria-hidden="true"></span>
                         </a>
                         <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
                             <div class="agileits_modal_body">
@@ -550,7 +549,7 @@
                         Curae; Nulla
                         mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
                     <div>
-                        <form action="" class="mt-5 row d-flex justify-content-center">
+                        <form action="" class="mt-5 row d-md-flex justify-content-center">
                             <input type="text" placeholder="Enter your email..." class="col-md-12">
                             <button class="btn btn-success ml-3">Subscribe</button>
                         </form>
@@ -617,6 +616,9 @@
             </div>
         </div>
     </footer>
+    <!-- back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-tope cd-top--is-visible"><i
+            class="fa fa-level-up-alt"></i></a>
     <!-- jquery -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
@@ -631,6 +633,11 @@
 
             $(".owl-carousel").owlCarousel({
                 items: 2,
+                responsive: {
+                    991.8: {
+                        items: 1,
+                    }
+                }
             });
 
         });
@@ -657,7 +664,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-
+    <!-- back to top -->
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
 </body>
 
 </html>
