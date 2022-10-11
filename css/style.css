@@ -32,41 +32,35 @@ title p{
 /* Header */
 
 header{
-    position: absolute;
+    position: fixed;
     top: 40px;
     left: 0;
     z-index: 1001;
     width: 100%;
-    display: fixed;
     background-color: white;
+    /* background-color: #0c0c0c; */
 }
-.navbar-expand-lg .navbar-nav .active .nav-link {
+
+.navbar-expand-lg .navbar-nav  .nav-link {
     text-transform: capitalize;
     transition: 0.5s ease;
     /* padding: 14px 0; */
     /* font-size: 1.2em; */
     font-weight: 400;
     position: relative;
-    color: black;
+    /* color: black; */
     /* transition-timing-function: ease; */
 }
 .navbar-expand-lg .navbar-nav .nav-item .nav-link{
-    color: #189a46;
+    color: #000c04;
+    font-size: 19px;
 }
-/* .header__content .navbar-collapse .nav-item a{
-    padding: 0;
-    
-    color: black;
-    transition: 0.3s ease-in-out;
-    border-radius: 0;
-    display: inline-block;
-    text-transform: capitalize;
-    text-decoration: none;
-} */
-/* .header__content .navbar-collapse .nav-item a:hover{
-    border-bottom: 2px solid #189a46;
-    opacity: 1;
-} */
+.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover{
+    color: #35a22c;
+}
+.navbar-expand-lg .navbar-nav .nav-item .active{
+    color: #35a22c;
+}
 a.nav-link:before, a.dropdown-item:before {
     position: absolute;
     content: '';
@@ -75,49 +69,103 @@ a.nav-link:before, a.dropdown-item:before {
     height: 1px;
     bottom: 13px;
 }
+nav ul li.nav-item a::before{
+    position: absolute;
+    content: '';
+    background: #35a22c;
+    width: 0px;
+    height: 1px;
+    bottom: 2px;
+    /* padding: 0; */
+    margin: 0 auto;
+}
+nav ul li.nav-item a:hover::before{
+    width: 80%;
+    /* width: 10px; */
+}
 nav ul li a, nav ul li a:after, nav ul li a:before {
     transition: all .5s;
 }
-/* a.nav-link:hover::before{
-    width: 50px;
-} */
-.nav-link:hover::before{
-    width: 100%;
+nav ul li a.dropdown-item::before{
+    position: absolute;
+    content: '';
+    background: #35a22c;
+    width: 0px;
+    bottom: 0px;
+    height: 1px;
+    z-index: 1000;
 }
+nav ul li .dropdown-item{
+    position: relative;
+}
+
+nav ul li a.dropdown-item:hover::before{
+    width: 70%;
+}
+
 .header__content .navbar{
     font-size: 18px;
     padding: 15px 0;
-    background-color: white;
+    /* background-color: white; */
 }
 .header__content .navbar>a{
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 700;
     color: #189a46;
 }
-.header__content .collapse li{
-    padding: 0 5px;
-
+.header__content .navbar>a:hover{
+    color: #189a46;
 }
+.header__content .collapse li{
+    padding: 0 3px;
+}
+.navbar-expand-lg .navbar-nav .nav-link span.fa {
+    font-size: 14px;
+    padding-left: 2px;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border-radius: 15px;
+    font-size: 19px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.navbar-dark .navbar-toggler-icon{
+    color: white;
+    border-color: rgba(255,255,255,1);
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: none
+}
+button.navbar-toggler.collapsed .icon-expand {
+    display: block;
+}
+
+
+
+
+
 
 
 /* Carousel */
 .carousel__content .slide1, .carousel__content .slide2, .carousel__content .slide3, .carousel__content .slide4{
     /* width: 100%;
     height: 100%;  */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
     min-height: calc(100vh - 40px);
     position: relative;
-    z-index: 10;
+    z-index: 0;
     display: grid;
     align-items: center;
     /* padding: 3em 0; */
 }
 .carousel__content .container{
     padding: 0;
-    /* margin: 0; */
 }
 .carousel__content .slide1{
     background-image: url(../img/banner1.jpg);
@@ -131,38 +179,48 @@ nav ul li a, nav ul li a:after, nav ul li a:before {
 .carousel__content .slide4{
     background-image: url(../img/banner4.jpg);
 }
-.carousel__content{
+/* .carousel__content{
     position: relative;
-    z-index: 9;
+} */
+/* .carousel-inner{
+    position: relative;
 }
-
-.carousel__content .carousel-inner::before{
-    content: '';
-    background-color: rgba(0, 0, 0, 0.691);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    opacity: 0.5;
+.carousel__info{
+    position: relative;
 }
 .carousel__content .carousel-item{
     position: relative;
 }
+.carousel__content{
+    position: relative;
+} */
+.carousel__content .carousel-inner::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #0c0c0c69;
+        /* opacity: .6; */
+}
+
 .carousel__content .carousel__text{
-    /* position: absolute; */
+    position: absolute;
     /* text-align: left !important; */
-    /* top: 30%;
-    left: 7%; */
+    top: 28%;
+    left: 50%;
     word-wrap: break-word;
     /* top: 300px;
     left: 0; */
-    z-index: 1000;
+    z-index: 2;
     /* width: 1000px;
     height: 500px; */
-    /* text-align: left; */
+    text-align: left;
     /* display: flex; */
+    opacity: 1;
+    max-width: 700px;
 }
 /* .carousel__content .carousel__text2{
     position: absolute;
@@ -171,9 +229,9 @@ nav ul li a, nav ul li a:after, nav ul li a:before {
     z-index: 100;
     text-align: left;
 } */
-.carousel__text{
+/* .carousel__text{
     max-width: 700px;
-}
+} */
 .carousel__content .carousel__text h1{
     font-size: 66px;
     line-height: 76px;
@@ -184,16 +242,18 @@ nav ul li a, nav ul li a:after, nav ul li a:before {
 .carousel__content .carousel__text h5{
     color: white;
 }
-.carousel__button-left{
+.carousel__button-left, .carousel__button-left:hover{
     color: #189a46;
 }
 .carousel__button button{
     margin: 50px 0;
     padding: 10px 30px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
-
-
-
+.carousel__button-right:hover{
+    color: #189a46;
+}
 
 /* .carousel__info{
     position: absolute;
@@ -202,14 +262,17 @@ nav ul li a, nav ul li a:after, nav ul li a:before {
     left: 7%;
 
 } */
+
+
+
+
 /* About */
+
 .About__content{
     text-align: center;
     padding: 70px 0;
 }
-/* .About__content .title h3{
-    font-size: 46px;
-} */
+
 .About__content .title{
     max-width: 700px;
     margin: 0 auto;
@@ -483,9 +546,45 @@ nav ul li a, nav ul li a:after, nav ul li a:before {
 
 
 
-
-
-/* RESPONSIVE */
+/* ? DARK THEME */
+.dark#myHeader,.dark#myNav, .dark#myAbout, .dark#myChoose{
+    background-color: #0c0c0c;
+}
+.dark#myAbout h3, .dark#myChoose h3, .dark#myChoose .choose__list, .dark#myAbout a{
+    color: white;
+}
+.dark#myAbout p{
+    color: rgba(255, 255, 255, 0.81);
+}
+.dark#myAbout a{
+    transition: all .5s;
+}
+.dark#myAbout a:hover{
+    color: #35a22c;
+}
+.dark#myChoose p{
+    color: rgba(255, 255, 255, 0.81);
+}
+.dark#myChoose .Choose__text .fa{
+    background-color: rgba(255, 255, 255, 0.203)
+}
+.dark#myNav .navbar-collapse{
+    background-color: #0c0c0c;
+}
+.dark#myNav ul li.nav-item a{
+    color: white;
+}
+.dark#myNav.navbar-nav .nav-item .active{
+    color: #35a22c;
+    transition: all .5s;
+}
+.dark#myNav .navbar-expand-lg .navbar-nav .nav-item .nav-link:hover{
+    color: #35a22c;
+}
+.dark#myNav .header__content .navbar>a:hover{
+    color: #189a46;
+}
+/* ! RESPONSIVE */
 @media screen and (max-width: 1200px) {
     
 }
@@ -497,11 +596,37 @@ nav ul li a, nav ul li a:after, nav ul li a:before {
     }
     header .navbar-toggler{
         background-color: #35a22c;
-        color: white;
+        /* color: white; */
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        line-height: 30px;
+        
     }
-    header .navbar-toggler-icon{
+    /* header .navbar-toggler-icon{
         color: white;
+    } */
+    .navbar-expand-lg .navbar-nav .nav-link {
+        display: block;
+        text-align: center;
     }
+    /* nav ul li a.dropdown-item:hover::before{
+        width: 0;
+    } */
+    .dropdown-menu{
+        text-align: center;
+    }
+    .navbar-toggler-icon.fa {
+        line-height: 1.2em;
+        color: #fff;
+        line-height: 30px;
+        background-color:#35a22c;
+        border-radius: 5px;
+    }
+    nav ul li.nav-item a:hover::before{
+        width: 0;
+    }
+    /* CAROUSEL */
     .carousel__content .carousel__text h1 {
         font-size: 48px;
         line-height: 55px;

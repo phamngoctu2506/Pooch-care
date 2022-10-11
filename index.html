@@ -27,18 +27,20 @@
 </head>
 
 <body>
-    <header>
+    <header id="myHeader">
         <div class="header__content">
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="container navbar navbar-expand-lg navbar-dark  d-flex .bg-transparent" id="myNav">
             <a class="navbar-brand" href="#">Pooch Care</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+              <!-- <span class="navbar-toggler-icon fa icon-expand fa-sun"></span> -->
+              <!-- <span class="navbar-toggler-icon"></span> -->
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">About</a>
@@ -50,16 +52,14 @@
                     <a class="nav-link" href="#">Gallery</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Blog
+                      <span class="fa fa-angle-down"></span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu pr-3 pl-3" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Blog Posts</a>
                       <a class="dropdown-item" href="#">Blog single</a>
                       <a class="dropdown-item" href="#">Landing Page</a>
-                      <!-- <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a> -->
-                      
                     </div>
                   </li>
                   <li class="nav-item">
@@ -72,8 +72,8 @@
                   </li> -->
               </ul>
               <a class="nav-link" href="#">
-                <i class="fa-regular fa-moon"></i>
-            </a>
+                <i class="fa-regular fa-moon" id="switchButton"></i>
+              </a>
             </div>
           </nav>
         </div>
@@ -92,14 +92,15 @@
                 <div class="carousel__info">
                     <div class="container">
                         <div class="carousel__text">
-                            <div class="text__left">
+                                <!-- <div class="text__left"> -->
                             <h1>Quality Things For Loving Pets</h1>
                             <h5>Keep Your Pet Smiling</h5>
                             <div class="carousel__button">
-                                <button class="carousel__button-left btn-outline-light btn-lg ">Read More</button>
-                                <button type="button" class="btn btn-transparent btn-outline-light btn-lg">Contact Us</button>
+                                <button class="btn btn-light btn-outline-light btn-lg carousel__button-left">Read More</button>
+                                <button type="button" class="btn btn-transparent btn-outline-light btn-lg carousel__button-right">Contact Us</button>
+                            <!-- </div> -->
                             </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -197,7 +198,7 @@
           </div> -->
         </div>
     </section>
-    <section class="About">
+    <section class="About" id="myAbout">
         <div class="container About__content">
             <div class="title">
                 <h2>ABOUT US</h2>
@@ -268,7 +269,7 @@
             </div>
         </div>
     </div>
-    <section class="Choose">
+    <section class="Choose" id="myChoose">
         <div class="container Choose__content">
             <div class="row">
                 <div class="col-sm-12 col-lg-6 mb-lg-0 mb-5 mt-lg-0 mt-5">
@@ -283,19 +284,25 @@
                     <div class="Choose__text">
                         <ul>
                             <li>
-                                <span class="fa fa-check"></span>Certified Groomer
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Certified Groomer</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>10 Years of Experience
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">10 Years of Experience</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Pet Lover
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Pet Lover</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Customer Supports
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Customer Supports</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Veterinary Help
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Veterinary Help</span>
+                                
                             </li>
                         </ul>
                     </div>
@@ -678,6 +685,9 @@
     }
         })
     </script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+    
 </body>
 
 </html>
