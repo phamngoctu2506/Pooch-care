@@ -617,8 +617,7 @@
         </div>
     </footer>
     <!-- back to top -->
-    <a href="#" class="backToTop cd-top text-replace js-cd-tope cd-top--is-visible"><i
-            class="fa fa-level-up-alt"></i></a>
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"><i class="fa fa-level-up-alt"></i></a>
     <!-- jquery -->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
@@ -634,8 +633,11 @@
             $(".owl-carousel").owlCarousel({
                 items: 2,
                 responsive: {
-                    991.8: {
-                        items: 1,
+                    0: {
+                        items: 1
+                    },
+                    992: {
+                        items: 2
                     }
                 }
             });
