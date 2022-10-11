@@ -25,9 +25,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="myHeader">
         <div class="header__content">
-            <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="container navbar navbar-expand-lg navbar-light bg-light" id="myNav">
                 <a class="navbar-brand" href="#">Pooch Care</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -49,126 +49,111 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Gallery</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Blog
+                                <span class="fa fa-angle-down"></span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu pr-3 pl-3" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Blog Posts</a>
                                 <a class="dropdown-item" href="#">Blog single</a>
                                 <a class="dropdown-item" href="#">Landing Page</a>
-                                <!-- <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a> -->
-
                             </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa-regular fa-moon"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    
+                </div>
+                <!-- <span class="nav-link darkMode">
+                    <i class="fa-regular fa-moon" id="switchButton"></i>
+                </span> -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <div class="mode-container">
+                                    <i class="fa-regular fa-sun"></i>
+                                    <i class="fa-regular fa-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
                 </div>
             </nav>
         </div>
     </header>
     <section class="Pooch-carousel">
-        <div class="carousel__content">
-            <div id="carouselExampleIndicators" class="carousel slide myCarousel" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <!-- <img class="d-block w-100" src="./img/banner1.jpg"alt="First slide"> -->
-                        <img class="w-100" src="./img/banner1.jpg" alt="First slide">
-                        <div class="carousel__info">
-                            <div class="container">
-                                <div class="carousel__text">
-                                    <div class="text__left">
-                                        <h1>Quality Things For Loving Pets</h1>
-                                        <h5>Keep Your Pet Smiling</h5>
-                                        <div class="carousel__button">
-                                            <button class="carousel__button-left btn-outline-light btn-lg ">Read
-                                                More</button>
-                                            <button type="button"
-                                                class="btn btn-transparent btn-outline-light btn-lg">Contact Us</button>
-                                        </div>
-                                    </div>
-                                    <div class="text__right"></div>
-                                    <!-- <h1>cdhsdhcsfjdsfjakfhjdsajgekafgejkgfasefguidgjshgfjasgfs</h1> -->
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/banner2.jpg" alt="Second slide">
-                        <div class="carousel__info">
-                            <div class="container">
-                                <div class=" carousel__text carousel__text2 ">
-                                    <h1>Delivering happiness <br> for Pets</h1>
-                                    <h5>We help your Projects</h5>
-                                    <div class="carousel__button">
-                                        <button class="carousel__button-left btn-outline-light btn-lg">Read
-                                            More</button>
-                                        <button type="button"
-                                            class="btn btn-transparent btn-outline-light btn-lg">Contact Us</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/banner3.jpg" alt="Third slide">
-                        <div class="carousel__info">
-                            <div class="container">
-                                <div class=" carousel__text ">
-                                    <h1>Quality Things For <br> Loving Pets</h1>
+        <div class="carousel__content"> 
+          
+            <div id="owl-one" class="owl-carousel owl-theme">
+                <div class="carousel-item slide slide1">
+                    <div class="carousel__info">
+                        <div class="container">
+                            <div class="carousel__text">
+                                    <h1>Quality Things For Loving Pets</h1>
                                     <h5>Keep Your Pet Smiling</h5>
                                     <div class="carousel__button">
-                                        <button class="carousel__button-left btn-outline-light btn-lg">Read
-                                            More</button>
-                                        <button type="button"
-                                            class="btn btn-transparent btn-outline-light btn-lg">Contact Us</button>
+                                        <button class="btn btn-light btn-outline-light btn-lg carousel__button-left">Read
+                                        More</button>
+                                        <button type="button" class="btn btn-transparent btn-outline-light btn-lg carousel__button-right">Contact
+                                        Us</button>
                                     </div>
-                                </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./img/banner4.jpg" alt="Fourth slide">
-                        <div class="carousel__info">
-                            <div class="container">
-                                <div class=" carousel__text carousel__text2 ">
-                                    <h1>Delivering happiness <br> for Pets</h1>
-                                    <h5>We help your Projects</h5>
-                                    <div class="carousel__button">
-                                        <button class="carousel__button-left btn-outline-light btn-lg">Read
-                                            More</button>
-                                        <button type="button"
-                                            class="btn btn-transparent btn-outline-light btn-lg">Contact Us</button>
-                                    </div>
+                </div>
+                <div class="carousel-item slide slide2">
+                    <div class="container">
+                        <div class="carousel__text carousel__text-right">
+                                <h1>Quality Things For Loving Pets</h1>
+                                <h5>Keep Your Pet Smiling</h5>
+                                <div class="carousel__button">
+                                    <button class="btn btn-light btn-outline-light btn-lg carousel__button-left">Read
+                                    More</button>
+                                    <button type="button" class="btn btn-transparent btn-outline-light btn-lg carousel__button-right">Contact
+                                    Us</button>
                                 </div>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slide slide3">
+                    <div class="container">
+                        <div class="carousel__text">
+                                <h1>Quality Things For Loving Pets</h1>
+                                <h5>Keep Your Pet Smiling</h5>
+                                <div class="carousel__button">
+                                    <button class="btn btn-light btn-outline-light btn-lg carousel__button-left">Read
+                                    More</button>
+                                    <button type="button" class="btn btn-transparent btn-outline-light btn-lg carousel__button-right">Contact
+                                    Us</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item slide slide4 ">
+                    <div class="container">
+                        <div class="carousel__text carousel__text-right">
+                                <h1>Quality Things For Loving Pets</h1>
+                                <h5>Keep Your Pet Smiling</h5>
+                                <div class="carousel__button">
+                                    <button class="btn btn-light btn-outline-light btn-lg carousel__button-left">Read
+                                    More</button>
+                                    <button type="button" class="btn btn-transparent btn-outline-light btn-lg carousel__button-right">Contact
+                                    Us</button>
+                                </div>
                         </div>
 
                     </div>
                 </div>
             </div>
+            
         </div>
+
     </section>
-    <section class="About">
+
+    <section class="About" id="myAbout">
         <div class="container About__content">
             <div class="title">
                 <h2>ABOUT US</h2>
@@ -241,7 +226,7 @@
             </div>
         </div>
     </div>
-    <section class="Choose">
+    <section class="Choose" id="myChoose">
         <div class="container Choose__content">
             <div class="row">
                 <div class="col-sm-12 col-lg-6 mb-lg-0 mb-5 mt-lg-0 mt-5">
@@ -258,19 +243,25 @@
                     <div class="Choose__text">
                         <ul>
                             <li>
-                                <span class="fa fa-check"></span>Certified Groomer
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Certified Groomer</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>10 Years of Experience
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">10 Years of Experience</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Pet Lover
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Pet Lover</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Customer Supports
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Customer Supports</span>
                             </li>
                             <li>
-                                <span class="fa fa-check"></span>Veterinary Help
+                                <span class="fa fa-check"></span>
+                                <span class="choose__list">Veterinary Help</span>
+
                             </li>
                         </ul>
                     </div>
@@ -546,7 +537,7 @@
                     <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
                         Curae; Nulla
                         mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
-                    <div>
+                    <div> 
                         <form action="" class="mt-5 row d-md-flex justify-content-center">
                             <input type="text" placeholder="Enter your email..." class="col-md-12">
                             <button class="btn btn-success ml-3">Subscribe</button>
@@ -613,19 +604,22 @@
                         class="text-danger">W3Layouts</a></p>
             </div>
         </div>
-    </footer>
+    </footer> 
     <!-- back to top -->
     <a href="#" class="backToTop cd-top text-replace js-cd-top"><i class="fa fa-level-up-alt"></i></a>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <!-- waypoints -->
-    <script src="./js/jquery.waypoints.min.js"></script>
+    
     <!-- owl carousel -->
     <script src="./js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
-
+            $("#owl-one").owlCarousel({
+                items: 1,
+                loop:true,
+                autoplay:true,
+            });
             $(".owl-carousel").owlCarousel({
                 responsive: {
                     0: {
@@ -636,7 +630,7 @@
                     }
                 }
             });
-
+            
         });
     </script>
     <!-- popup -->
@@ -661,9 +655,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <!-- COUNT UP -->
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    
+    
+    
     <!-- back to top -->
     <script src="./js/main.js"></script>
     <script src="./js/util.js"></script>
 </body>
 
+    </body>
+
 </html>
+
