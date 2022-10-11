@@ -901,7 +901,7 @@ button::-moz-focus-inner {
 .fa-play-circle:before {
   border-radius: 50%;
   background: #189a46;
-  border: 0px;
+  border: 5px solid #189a4665;
 }
 
 .Better__content {
@@ -965,8 +965,8 @@ button::-moz-focus-inner {
   font-family: "Merriweather", serif;
 }
 
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls .owl-page span:hover {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background-color: #189a46;
   width: 30px;
   height: 12px;
@@ -1082,7 +1082,8 @@ input:focus-visible {
   .Plans__btn {
     display: none;
   }
-  .footer__contact input{
+
+  .footer__contact input {
     width: 100%;
   }
 }
