@@ -1219,7 +1219,9 @@ button::-moz-focus-inner {
 .footer__contact input[type="text"]:focus {
   border: 1px solid #189a46;
 }
-
+.footer__contact .btn-success{
+  margin-left: 16px;
+}
 input:focus-visible {
   outline: 0px;
 }
@@ -1309,6 +1311,20 @@ input:focus-visible {
 }
 
 /* reponsive */
+
+@media (max-width: 667px) {
+  .footer__header .btn-success {
+    flex-basis: 100%;
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  .footer__contact input{
+    flex-basis: 100%;
+
+  }
+}
 
 @media (max-width: 991.8px) {
   .Plans__btn {
