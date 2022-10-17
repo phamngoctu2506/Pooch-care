@@ -1194,6 +1194,16 @@ color: #189a46;
 .dark a#homeActive{
   color: #35a22c;
 }
+.dark#myHeader .dropdown-menu{
+  background-color: #0c0c0c;
+}
+.dark#myHeader .dropdown-item:hover{
+  background-color: #0c0c0c;
+  color: #35a22c;
+}
+.dark#myHeader a.nav-link:hover{
+  color: #35a22c;
+}
 /* ! RESPONSIVE */
 /* @media screen and (min-width:992px) and (max-width:100vh) {
   .carousel__content .carousel__text{
