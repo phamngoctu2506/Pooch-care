@@ -17,6 +17,11 @@ document.getElementById("switchButton").onclick = function () {
     document.getElementById("myNav").classList.toggle("dark");
     document.getElementById("myAbout").classList.toggle("dark");
     document.getElementById("myChoose").classList.toggle("dark");
+	document.getElementById("myServices").classList.toggle("dark");
+	document.getElementById("myPlans").classList.toggle("dark");
+	document.getElementById("myBetter").classList.toggle("dark");
+	document.getElementById("myTest").classList.toggle("dark");
+	document.getElementById("myFooter").classList.toggle("dark");
 	// document.getElementById("myBody").classList.toggle("dark");
   };
   function myFunction(x) {
