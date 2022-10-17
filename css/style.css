@@ -313,11 +313,15 @@ button.navbar-toggler.collapsed .icon-expand {
 }
 
 .carousel__content .owl-dots {
+  margin-top: 0px;
   position: absolute;
-  bottom: 1%;
-  left: 50%;
-  /* margin: 0 5px; */
+  left: 0px;
+  right: 0px;
+  bottom: 30px;
+  text-align: center;
+ 
 }
+
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
@@ -1417,6 +1421,9 @@ input:focus-visible {
   color: #35a22c;
 }
 .dark#myHeader a.nav-link:hover{
+  color: #35a22c;
+}
+.dark#myHeader a.navbar-brand{
   color: #35a22c;
 }
 /* ! RESPONSIVE */
